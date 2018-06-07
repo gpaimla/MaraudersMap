@@ -17,9 +17,9 @@ final class CONNECTION {
 
     static {
         CONNECTION_STYLES = new HashMap<>();
-        CONNECTION_STYLES.put("NOT CONNECTED", "status-not-connected");
-        CONNECTION_STYLES.put("CONNECTED", "status-connected");
-        CONNECTION_STYLES.put("CONNECTING", "status-connecting");
+        CONNECTION_STYLES.put(NOT_CONNECTED, "status-not-connected");
+        CONNECTION_STYLES.put(CONNECTED, "status-connected");
+        CONNECTION_STYLES.put(CONNECTING, "status-connecting");
     }
 }
 
@@ -33,7 +33,6 @@ public class Controller {
     private void initialize() {
         statusLabelBindings();
         statusText.setValue(CONNECTION.CONNECTING);
-
     }
 
     void statusLabelBindings() {
