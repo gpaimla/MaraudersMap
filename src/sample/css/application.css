@@ -1,0 +1,9 @@
+.status-connected{
+    -fx-text-fill: green;
+}
+.status-not-connected{
+    -fx-text-fill: red;
+}
+.status-connecting{
+    -fx-text-fill: blue;
+}
