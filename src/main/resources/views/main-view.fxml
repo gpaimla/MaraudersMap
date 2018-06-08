@@ -1,0 +1,14 @@
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<GridPane fx:controller="sample.view.Controller"
+          xmlns:fx="http://javafx.com/fxml" gridLinesVisible="false" styleClass="gridpane-center" alignment="center" hgap="2" vgap="10" stylesheets="@../css/application.css">
+    <Label text="Status: " textFill="BLACK" GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+    </Label>
+    <Label fx:id="statusLabel" text="${statusText}" textFill="BLACK" GridPane.columnIndex="1" GridPane.rowIndex="0">
+
+    </Label>
+
+    <Button maxWidth="Infinity" onAction="#sendPostRequest" styleClass="post-button" stylesheets="@../css/application.css" text="Send Post Request" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+</GridPane>
